@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button } from "@nextui-org/react";
-
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button } from "@nextui-org/react";
+import Link from 'next/link'
 const page = () => {
     return (
         <Navbar isBordered>

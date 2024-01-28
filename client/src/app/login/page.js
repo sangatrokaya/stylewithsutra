@@ -1,8 +1,8 @@
 import React from 'react'
-
+import FormLayout from '@/components/layout/page'
 const page = () => {
   return (
-    <div>I am login page</div>
+    <FormLayout/>
   )
 }
 
