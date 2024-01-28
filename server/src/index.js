@@ -1,7 +1,7 @@
 const express = require('express')
 const connection = require('./db/connection')
 const app =  express()
-app.use(express.json())
+app.use(express.json()) //body parser
 const userRoute = require('./routes/user')
 app.use(userRoute)
 
