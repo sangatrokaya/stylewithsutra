@@ -3,16 +3,18 @@ import React from 'react'
 import Image from 'next/image'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button } from "@nextui-org/react";
 import Link from 'next/link'
+import { IoPersonOutline } from "react-icons/io5";
+
 const page = () => {
     return (
-        <Navbar className='justify-start'>
-            <NavbarContent>
-                <NavbarBrand className="mr-4">
+        <Navbar>
+            <NavbarContent >
+                <NavbarBrand className="mr-4 justify-start">
                     {/* <AcmeLogo /> */}
                     <Image className="m-1" src="/Ecomlogo.png" width='42' height='42'></Image>
                     <p className="hidden sm:block font-bold text-xl mr-4">Style With Sutra</p>
                 </NavbarBrand>
-                <NavbarContent className="hidden sm:flex gap-4 m-4">
+                <NavbarContent className="hidden sm:flex gap-4 ml-4 justify-between">
                     <NavbarItem>
                         <Link color="secondary" href="#">
                             Home
@@ -41,20 +43,18 @@ const page = () => {
                 </NavbarContent>
             </NavbarContent>
 
-            <NavbarContent>
+            <NavbarContent className='justify-end'>
                 <Input
                     classNames={{
                         base: "max-w-full sm:max-w-[10rem] h-10",
                         mainWrapper: "h-full",
                         input: "text-small",
-                        inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
+                        inputWrapper: "h-full font-normal text-xs bg-default-400/20 dark:bg-default-500/20",
                     }}
                     placeholder="Type to search..."
-                    size="sm"
-                    type="search"
+                    type="search"                    
                 />
-                <Button color='success'>Login</Button>
-                <Button as={Link} href='/register' color='secondary'>Register</Button>
+                <IoPersonOutline className='h-6 w-6'/>
                 <div>
                     <Dropdown placement="bottom-end">
                         <DropdownTrigger>

@@ -24,7 +24,7 @@ const SignupSchema = Yup.object().shape({
     .required('required')
 });
 
-export const ValidationSchemaExample = () => {
+export const Register = () => {
   return (
     <div>
 
@@ -81,7 +81,7 @@ export const ValidationSchemaExample = () => {
 const page = () => {
   return (
     <FormLayout>
-      <ValidationSchemaExample />
+      <Register />
     </FormLayout>
   )
 }
