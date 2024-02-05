@@ -5,7 +5,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, Dr
 import Link from 'next/link'
 import { IoPersonOutline } from "react-icons/io5";
 
-const page = () => {
+const NavBar = () => {
     return (
         <Navbar>
             <NavbarContent >
@@ -54,7 +54,9 @@ const page = () => {
                     placeholder="Type to search..."
                     type="search"                    
                 />
-                <IoPersonOutline className='h-6 w-6'/>
+                <a href='/register'>
+                <IoPersonOutline className='h-6 w-6 cursor-pointer'/>
+                </a>
                 <div>
                     <Dropdown placement="bottom-end">
                         <DropdownTrigger>
@@ -90,4 +92,4 @@ const page = () => {
     )
 }
 
-export default page
+export default NavBar
