@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import styles from './styles.module.css'
 import { useFormik } from 'formik';
 import { Input } from "@nextui-org/react";
 import * as Yup from 'yup';
@@ -25,7 +26,7 @@ const SignupForm = () => {
   });
 
   const reigsterUser = async(values)=> {
-    await fetch('http://localhost:5000/register',{
+    await fetch('http://localhost:5000/register/',{
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify(values)
@@ -46,13 +47,13 @@ const SignupForm = () => {
     },
   });
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form className={styles.formFields} onSubmit={formik.handleSubmit}>
       {/* <label htmlFor="fullName">Full Name</label> */}
       <Input id="fullName"
         name="fullName"
         type="text"
         onChange={formik.handleChange}
-        value={formik.values.fullName} label="fullName" />
+        value={formik.values.fullName} label="FullName" />
       {formik?.errors.fullName}
 
       {/* <label htmlFor="email">Email</label> */}
@@ -60,16 +61,16 @@ const SignupForm = () => {
         name="email"
         type="email"
         onChange={formik.handleChange}
-        value={formik.values.email} label="email" />
+        value={formik.values.email} label="Email" />
       {formik?.errors.email}
 
 
       {/* <label htmlFor="phoneNumber">Phone Number</label> */}
       <Input id="phoneNumber"
         name="phoneNumber"
-        type="number"
+        type="text"
         onChange={formik.handleChange}
-        value={formik.values.phoneNumber} label="phoneNumber" />
+        value={formik.values.phoneNumber} label="PhoneNumber" />
       {formik?.errors.phoneNumber}
 
 
@@ -78,7 +79,7 @@ const SignupForm = () => {
         name="role"
         type="text"
         onChange={formik.handleChange}
-        value={formik.values.role} label="role" />
+        value={formik.values.role} label="Role" />
       {formik?.errors.role}
 
 
@@ -87,7 +88,7 @@ const SignupForm = () => {
         name="password"
         type="password"
         onChange={formik.handleChange}
-        value={formik.values.password} label="password" />
+        value={formik.values.password} label="Password" />
       {formik?.errors.password}
 
 
