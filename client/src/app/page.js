@@ -5,28 +5,26 @@ import Footer from '@/components/footer/page'
 
 
 const page = () => {
-  const contentStyle = {
-    height: '500px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
+  // const contentStyle = {
+  //   ,
+  //   textAlign: 'center',
+    
+  // };
   return (
     <div>
       <Nav />
       <Carousel autoplay>
         <div>
-          <h3 style={contentStyle}>1</h3>
+         <img alt='Carousel Image' className='object-cover' src='/slide1.jpg' style={{width: '100%'}}></img>
         </div>
         <div>
-          <h3 style={contentStyle}>2</h3>
+        <img alt='Carousel Image' className='object-cover' src='/slide2.jpg' style={{ width: '100%'}}></img>
         </div>
         <div>
-          <h3 style={contentStyle}>3</h3>
+        <img alt='Carousel Image' className='object-cover' src='/slide3.jpg' style={{ width: '100%'}}></img>
         </div>
         <div>
-          <h3 style={contentStyle}>4</h3>
+        <img alt='Carousel Image' className='object-cover' src='/slide4.jpg' style={{width: '100%'}}></img>
         </div>
       </Carousel>
       <section class="text-gray-600 body-font">
