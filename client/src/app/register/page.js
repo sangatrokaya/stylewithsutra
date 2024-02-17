@@ -4,6 +4,8 @@ import styles from './styles.module.css'
 import { useFormik } from 'formik';
 import { Input, Card, CardBody } from "@nextui-org/react";
 import * as Yup from 'yup';
+import {  toast } from 'react-toastify';
+
 
 
 const SignupForm = () => {
@@ -32,7 +34,7 @@ const SignupForm = () => {
       body: JSON.stringify(values)
     })
     const data = await res.json()
-    alert(data.msg)
+    toast(data.msg)
   }
 
   const formik = useFormik({
