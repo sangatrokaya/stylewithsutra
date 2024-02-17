@@ -7,7 +7,7 @@ import { IoPersonOutline } from "react-icons/io5";
 
 const NavBar = () => {
     return (
-        <Navbar>
+        <Navbar >
             <NavbarContent >
                 <NavbarBrand className="mr-4 justify-start">
                     {/* <AcmeLogo /> */}

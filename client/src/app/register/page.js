@@ -98,9 +98,7 @@ const SignupForm = () => {
               value={formik.values.password} label="Enter your password" />
             {formik?.errors.password}
             <br/>
-            <div className={styles.btn} >
-            <button type="submit">Submit</button>
-            </div>
+            <button className={styles.btn} type="submit">Submit</button>
           </CardBody>
         </Card>
       </div>

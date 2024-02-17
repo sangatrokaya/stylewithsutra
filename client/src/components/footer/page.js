@@ -5,10 +5,10 @@ import Image from 'next/image'
 const page = () => {
   return (
     <div>
-      <footer className="text-gray-600 body-font">
+      <footer className="text-white body-font bg-gray-700">
         <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-            <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10 ">
+            <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
               <Image
                 src="/Ecomlogo.png"
                 width='42'
@@ -17,98 +17,98 @@ const page = () => {
               ></Image>
               <span className="ml-1 text-xl">Style With Sutra</span>
             </a>
-            <p className="mt-2 text-sm text-gray-500 italic">"Let us enter into your wardrobes"</p>
+            <p className="mt-2 text-sm text-white italic">"Let us enter into your wardrobes"</p>
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SHOP MEN</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SHOP MEN</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">General Fashion</a>
+                  <a className="text-white hover:text-gray-800">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Winter</a>
+                  <a className="text-white hover:text-gray-800">Winter</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Summer</a>
+                  <a className="text-white hover:text-gray-800">Summer</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Formal</a>
+                  <a className="text-white hover:text-gray-800">Formal</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Casual</a>
+                  <a className="text-white hover:text-gray-800">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SHOP WOMEN</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SHOP WOMEN</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">General Fashion</a>
+                  <a className="text-white hover:text-gray-800">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Winter</a>
+                  <a className="text-white hover:text-gray-800">Winter</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Summer</a>
+                  <a className="text-white hover:text-gray-800">Summer</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Formal</a>
+                  <a className="text-white hover:text-gray-800">Formal</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Casual</a>
+                  <a className="text-white hover:text-gray-800">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">BABY COLLECTION</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">BABY COLLECTION</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">General Fashion</a>
+                  <a className="text-white hover:text-gray-800">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Winter</a>
+                  <a className="text-white hover:text-gray-800">Winter</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Summer</a>
+                  <a className="text-white hover:text-gray-800">Summer</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Formal</a>
+                  <a className="text-white hover:text-gray-800">Formal</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Casual</a>
+                  <a className="text-white hover:text-gray-800">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">QUICK LINKS</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Track Your Order</a>
+                  <a className="text-white hover:text-gray-800">Track Your Order</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Suppport</a>
+                  <a className="text-white hover:text-gray-800">Suppport</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">FAQ</a>
+                  <a className="text-white hover:text-gray-800">FAQ</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Career</a>
+                  <a className="text-white hover:text-gray-800">Career</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">About</a>
+                  <a className="text-white hover:text-gray-800">About</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Contact Us</a>
+                  <a className="text-white hover:text-gray-800">Contact Us</a>
                 </li>
               </nav>
             </div>
           </div>
         </div>
-        <div className="bg-gray-100">
+        <div className="bg-gray-900">
           <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
             <p className="text-gray-500 text-sm text-center sm:text-left">© 2024 Style With Sutra —
-              <a rel="noopener noreferrer" className="text-gray-600 ml-1">@stylewithsutra</a>
+              <a rel="noopener noreferrer" className="text-gray-500 ml-1">@stylewithsutra</a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
               <a className="text-gray-500" href='https://www.facebook.com/stylewithsutra' target="_blank">
