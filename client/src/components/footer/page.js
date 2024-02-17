@@ -21,7 +21,7 @@ const page = () => {
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SHOP MEN</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">SHOP MEN</h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-white hover:text-gray-800">General Fashion</a>
@@ -41,7 +41,7 @@ const page = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">SHOP WOMEN</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">SHOP WOMEN</h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-white hover:text-gray-800">General Fashion</a>
@@ -61,7 +61,7 @@ const page = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">BABY COLLECTION</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">SHOP CHILDREN</h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-white hover:text-gray-800">General Fashion</a>
@@ -81,7 +81,7 @@ const page = () => {
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
+              <h2 className="title-font font-medium text-white tracking-widest text-lg mb-3">QUICK LINKS</h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-white hover:text-gray-800">Track Your Order</a>

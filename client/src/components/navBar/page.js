@@ -32,7 +32,7 @@ const NavBar = () => {
                     </NavbarItem>
                     <NavbarItem>
                         <Link color="foreground" href="#">
-                            Baby Collection
+                            Children
                         </Link>
                     </NavbarItem>
                     <NavbarItem isActive>
