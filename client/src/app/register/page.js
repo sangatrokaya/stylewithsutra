@@ -6,6 +6,8 @@ import { Input, Card, CardBody } from "@nextui-org/react";
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation'
+import Link from 'next/link';
+import { Button } from 'antd';
 
 
 
@@ -108,7 +110,10 @@ const SignupForm = () => {
               value={formik.values.password} label="Enter your password" />
             {formik?.errors.password}
             <br />
-            <button className={styles.btn} type="submit">Submit</button>
+            <p className='text-sm p-3'>Already have an account? <span className='text-red-500'><button as={Link} href='/login' >Login</button></span> here</p>
+            <div className= {styles.btn}>
+            <button type="submit">Submit</button>
+            </div>
           </CardBody>
         </Card>
       </div>

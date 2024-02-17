@@ -23,14 +23,20 @@
   }
   
   .btn {
-    padding: 10px 3px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     font-size: 1rem;
     background-color: #ff0000;
     color: #fff;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
-    float: right;
+    width: 13%;
+    border: none;
+    padding: 6px 7px;
   }
+
+
   
+
