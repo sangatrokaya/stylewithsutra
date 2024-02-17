@@ -4,11 +4,14 @@ import styles from './styles.module.css'
 import { useFormik } from 'formik';
 import { Input, Card, CardBody } from "@nextui-org/react";
 import * as Yup from 'yup';
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import { useRouter } from 'next/navigation'
+
 
 
 
 const SignupForm = () => {
+  const router = useRouter()
   const SignupSchema = Yup.object().shape({
     fullName: Yup.string()
       .min(2, 'Too Short!')
@@ -34,6 +37,9 @@ const SignupForm = () => {
       body: JSON.stringify(values)
     })
     const data = await res.json()
+    if (res.status == 200) {
+      router.push('/login')
+    }
     toast(data.msg)
   }
 
@@ -65,7 +71,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.fullName} label="Enter your full name" />
             {formik?.errors.fullName}
-            <br/>
+            <br />
             <h1>Email</h1>
             <Input id="email"
               className='text-1 font-thin italic'
@@ -74,7 +80,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.email} label="Enter your email" />
             {formik?.errors.email}
-            <br/>
+            <br />
             <h1>Phone Number</h1>
             <Input id="phoneNumber"
               className='text-1 font-thin italic'
@@ -83,7 +89,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.phoneNumber} label="Enter your phone number" />
             {formik?.errors.phoneNumber}
-            <br/>
+            <br />
             <h1>Role</h1>
             <Input id="role"
               className='text-1 font-thin italic'
@@ -92,7 +98,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.role} label="Select your role" />
             {formik?.errors.role}
-            <br/>
+            <br />
             <h1>Password</h1>
             <Input id="password"
               className='text-1 font-thin italic'
@@ -101,7 +107,7 @@ const SignupForm = () => {
               onChange={formik.handleChange}
               value={formik.values.password} label="Enter your password" />
             {formik?.errors.password}
-            <br/>
+            <br />
             <button className={styles.btn} type="submit">Submit</button>
           </CardBody>
         </Card>
