@@ -76,7 +76,7 @@ const SignupForm = () => {
               name="email"
               type="email"
               onChange={formik.handleChange}
-              value={formik.values.email} label="Enter your email" />
+              value={formik.values.email} label="Enter your email address" />
             {formik?.errors.email}
             <br />
             <h1>Phone Number</h1>
