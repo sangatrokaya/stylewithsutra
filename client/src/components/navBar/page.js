@@ -12,7 +12,7 @@ const NavBar = () => {
                 <NavbarBrand className="mr-4 justify-start">
                     {/* <AcmeLogo /> */}
                     <Image className="m-1" src="/Ecomlogo.png" width='42' height='42'></Image>
-                    <p className="hidden sm:block font-bold text-xl mr-4">Style With Sutra</p>
+                    <p className="hidden sm:block font-bold text-xl mr-4">Style With <span className='text-orange-700'>Sutra</span></p>
                 </NavbarBrand>
                 <NavbarContent className="hidden sm:flex gap-4 ml-4 justify-between">
                     <NavbarItem>

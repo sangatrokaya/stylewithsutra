@@ -4,24 +4,25 @@
     align-items: center;
 
   }
+
   .formCard {
     width: 550px;
-    height: 680px;
+    height: 580px;
     border: 5px rgb(242, 221, 164);
     background: #ffffff;
     padding: 10px;
     text-align: center;
     font-family: Arial;
     box-sizing: border-box;
-}
+  }
 
   .formFields {
-    width:500px;
-    cursor: text;    
-    margin:auto;
+    width: 500px;
+    cursor: text;
+    margin: auto;
     display: block;
   }
-  
+
   .btn {
     position: absolute;
     bottom: 1rem;
@@ -37,6 +38,7 @@
     padding: 6px 7px;
   }
 
-
-  
-
+  .bgImage {
+    height: 500px;
+    z-index: 0;
+  }

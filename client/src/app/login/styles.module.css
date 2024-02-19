@@ -1,44 +1,46 @@
 .cardPosition {
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 
-  }
-  .formCard {
-    width: 550px;
-    height: 450px;
-    border: 5px rgb(242, 221, 164);
-    background: #ffffff;
-    padding: 10px;
-    text-align: center;
-    font-family: Arial;
-    box-sizing: border-box;
-    margin: auto;
 }
 
-  .formFields {
-    width:500px;
-    cursor: text;    
-    margin:auto;
-    display: block;
-  }
-  
-  .btn {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    font-size: 1rem;
-    background-color: #ff0000;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    width: 13%;
-    border: none;
-    padding: 6px 7px;
-  }
+.formCard {
+  width: 550px;
+  height: 450px;
+  border: 5px rgb(242, 221, 164);
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
+  box-sizing: border-box;
+  margin: auto;
+}
 
+.formFields {
+  width: 500px;
+  cursor: text;
+  margin: auto;
+  display: block;
+}
 
-  
+.btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  width: 13%;
+  border: none;
+  padding: 6px 7px;
+}
 
+.bgImage {
+  height: 500px;
+  z-index: 0;
+}
