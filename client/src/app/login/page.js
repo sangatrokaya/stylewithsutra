@@ -8,8 +8,13 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation'
 import Link from 'next/link';
 import Image from 'next/image'
+import { useSelector } from 'react-redux';
+
 
 const LoginForm = () => {
+  const {count} = useSelector(state => state.count)
+
+
   const router = useRouter()
   const LoginSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),
@@ -55,6 +60,8 @@ const LoginForm = () => {
       <form className={styles.formFields} onSubmit={formik.handleSubmit}>
         <div className={styles.cardPosition}>
           <Card className={styles.formCard}>
+            Count is {count}
+            {/* <button onClick={()=>}>Increment</button> */}
             <h3 className='font-bold m-2 text-xl'>Login</h3>
             <p className='text-xs my-1'>Enter Login details to get access</p>
             <CardBody>
