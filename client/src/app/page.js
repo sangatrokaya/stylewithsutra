@@ -1,32 +1,37 @@
+'use client'
 import React from 'react'
 import { Carousel } from 'antd';
 import Nav from '@/components/navBar/page'
 import Footer from '@/components/footer/page'
-
+import { useDispatch, useSelector } from 'react-redux';
+import { decrement, increment } from '@/redux/reducerSlice/countSlice';
 
 const page = () => {
-  // const contentStyle = {
-  //   ,
-  //   textAlign: 'center',
-    
-  // };
+  const { count } = useSelector(state => state.count)
+  const dispatch = useDispatch();
+
   return (
     <div>
       <Nav />
       <Carousel autoplay>
         <div>
-         <img alt='Carousel Image' className='object-cover' src='/slide1.jpg' style={{width: '100%'}}></img>
+          <img alt='Carousel Image' className='object-cover' src='/slide1.jpg' style={{ width: '100%' }}></img>
         </div>
         <div>
-        <img alt='Carousel Image' className='object-cover' src='/slide2.jpg' style={{ width: '100%'}}></img>
+          <img alt='Carousel Image' className='object-cover' src='/slide2.jpg' style={{ width: '100%' }}></img>
         </div>
         <div>
-        <img alt='Carousel Image' className='object-cover' src='/slide3.jpg' style={{ width: '100%'}}></img>
+          <img alt='Carousel Image' className='object-cover' src='/slide3.jpg' style={{ width: '100%' }}></img>
         </div>
         <div>
-        <img alt='Carousel Image' className='object-cover' src='/slide4.jpg' style={{width: '100%'}}></img>
+          <img alt='Carousel Image' className='object-cover' src='/slide4.jpg' style={{ width: '100%' }}></img>
         </div>
       </Carousel>
+      <div>
+        Count is {count}
+        <button onClick={() => dispatch(increment())}>Increment</button>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
+      </div>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
