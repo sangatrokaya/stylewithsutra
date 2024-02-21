@@ -4,11 +4,22 @@ import { Carousel } from 'antd';
 import Nav from '@/components/navBar/page'
 import Footer from '@/components/footer/page'
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from '@/redux/reducerSlice/countSlice';
+import { changeBoxColor, changeBoxShape } from '@/redux/reducerSlice/boxSlice';
 
 const page = () => {
-  const { count } = useSelector(state => state.count)
+  const { width, height, backgroundColor, borderRadius } = useSelector(state => state.box)
   const dispatch = useDispatch();
+
+  const generateArea = ()=> {
+    if (borderRadius === '50%'){
+      const radius = width / 2
+      const area = Math.PI * (radius ** 2)
+      return area.toFixed(2)
+    }else{
+      const area = width * height
+      return area.toFixed(2)
+    }
+  } 
 
   return (
     <div>
@@ -27,11 +38,13 @@ const page = () => {
           <img alt='Carousel Image' className='object-cover' src='/slide4.jpg' style={{ width: '100%' }}></img>
         </div>
       </Carousel>
-      <div>
-        Count is {count}
-        <button onClick={() => dispatch(increment())}>Increment</button>
-        <button onClick={() => dispatch(decrement())}>Decrement</button>
+      <div style= {{width , height , backgroundColor, borderRadius}}>
+
       </div>
+      Area: {generateArea()}
+      <input placeholder='Enter color' onChange={(e)=> dispatch(changeBoxColor(e.target.value))}/>
+        <button onClick={() => dispatch(changeBoxShape())}>Change to {borderRadius === '50%' ? 'Rectangle' : 'Circle'}</button>
+
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
