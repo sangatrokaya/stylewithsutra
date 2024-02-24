@@ -5,6 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button } from "@nextui-org/react";
 import Link from 'next/link'
 import { IoPersonOutline } from "react-icons/io5";
+import { FaCartPlus } from "react-icons/fa";
 
 const NavBar = () => {
     return (
@@ -88,6 +89,7 @@ const NavBar = () => {
                         </DropdownMenu>
                     </Dropdown>
                 </div>
+                <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-600' />
             </NavbarContent>
         </Navbar>
     )

@@ -21,85 +21,85 @@ const page = () => {
           </div>
           <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3">SHOP MEN</h2>
+              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3 cursor-pointer">SHOP MEN</h2>
               <nav className="list-none mb-10 text-sm">
                 <li>
-                  <a className="text-white hover:text-orange-500">General Fashion</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Winter</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Winter</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Summer</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Summer</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Formal</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Formal</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Casual</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3">SHOP WOMEN</h2>
+              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3 cursor-pointer">SHOP WOMEN</h2>
               <nav className="list-none mb-10 text-sm">
                 <li>
-                  <a className="text-white hover:text-orange-500">General Fashion</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Winter</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Winter</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Summer</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Summer</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Formal</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Formal</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Casual</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3">SHOP CHILDREN</h2>
+              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3 cursor-pointer">SHOP CHILDREN</h2>
               <nav className="list-none mb-10 text-sm">
                 <li>
-                  <a className="text-white hover:text-orange-500">General Fashion</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">General Fashion</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Winter</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Winter</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Summer</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Summer</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Formal</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Formal</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Casual</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Casual</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3">QUICK LINKS</h2>
+              <h2 className="title-font font-medium text-orange-500 tracking-widest text-lg mb-3 cursor-pointer">QUICK LINKS</h2>
               <nav className="list-none mb-10 text-sm">
                 <li>
-                  <a className="text-white hover:text-orange-500">Track Your Order</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Track Your Order</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Suppport</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Suppport</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">FAQ</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">FAQ</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Career</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Career</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">About</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">About</a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-orange-500">Contact Us</a>
+                  <a className="text-white hover:text-orange-500 cursor-pointer">Contact Us</a>
                 </li>
               </nav>
             </div>
