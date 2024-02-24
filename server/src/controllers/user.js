@@ -32,7 +32,8 @@ const loginUser = async(req, res) => {
                 const token = jwt.sign({ email: req.body.email }, 'shhhhh');
                 res.json({
                     msg: "Login Successful",
-                    token
+                    token,
+                    userDetails
                 })
             }else{
                 res.json({
