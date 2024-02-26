@@ -5,11 +5,6 @@ import Footer from '@/components/footer/page'
 
 
 const page = () => {
-  // const contentStyle = {
-  //   ,
-  //   textAlign: 'center',
-    
-  // };
   return (
     <div>
       <Nav />

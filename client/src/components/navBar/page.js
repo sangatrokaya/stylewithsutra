@@ -9,7 +9,7 @@ import { FaCartPlus } from "react-icons/fa";
 
 const NavBar = () => {
     return (
-        <Navbar className='w-full '>
+        <Navbar className='w-auto'>
             <NavbarBrand className="mr-4 justify-start">
                 {/* <AcmeLogo /> */}
                 <Image className="m-1" src="/Ecomlogo.png" width='42' height='42'></Image>
@@ -89,7 +89,7 @@ const NavBar = () => {
                         </DropdownMenu>
                     </Dropdown>
                 </div>
-                <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-600' />
+                <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-600 hover:text-green-800' />
             </NavbarContent>
         </Navbar>
     )
