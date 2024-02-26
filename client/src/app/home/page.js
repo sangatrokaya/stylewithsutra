@@ -1,12 +1,13 @@
 'use client'
 import React from 'react'
-import { Carousel } from 'antd';
+import { Carousel, FloatButton } from 'antd';
 import Nav from '@/components/navBar/page'
 import Footer from '@/components/footer/page'
 import { FaShippingFast } from "react-icons/fa";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { FcOnlineSupport } from "react-icons/fc";
+
 
 const page = () => {
     return (
@@ -165,8 +166,10 @@ const page = () => {
                     </div>
                 </div>
             </section>
-
             <Footer />
+            <>
+                <FloatButton.BackTop />
+            </>
         </div>
     )
 }
