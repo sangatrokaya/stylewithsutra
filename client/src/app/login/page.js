@@ -31,7 +31,7 @@ const LoginForm = () => {
     const data = await res.json()
     if (res.status == 200) {
       dispatch(addUserDetails(data))
-      router.push('/')
+      router.push('/home')
     }else{
       toast(data.msg)
     }
