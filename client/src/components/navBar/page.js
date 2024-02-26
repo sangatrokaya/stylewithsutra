@@ -6,8 +6,55 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, Dr
 import Link from 'next/link'
 import { IoPersonOutline } from "react-icons/io5";
 import { FaCartPlus } from "react-icons/fa";
+import { useSelector, useDispatch } from 'react-redux';
+import {logoutUser} from '@/redux/reducerSlice/userSlice'
+import { useRouter } from 'next/navigation';
 
 const NavBar = () => {
+    const dispatch = useDispatch()
+    const router = useRouter()
+    const { isLoggedIn } = useSelector(state => state.user)
+    const handleLogout = () => {
+        dispatch(logoutUser())
+        router.push('/')
+    }
+    const LoggedInDrop = () => {
+        return (
+            <Dropdown placement="bottom-end">
+                <DropdownTrigger>
+                    <Avatar
+                        isBordered
+                        as="button"
+                        className="transition-transform"
+                        color="secondary"
+                        size="sm"
+                        src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                    />
+                </DropdownTrigger>
+                <DropdownMenu aria-label="Profile Actions" variant="flat">
+                    <DropdownItem key="profile" className="h-14 gap-2">
+                        <p className="font-semibold">Signed in as</p>
+                        <p className="font-semibold">zoey@example.com</p>
+                    </DropdownItem>
+                    <DropdownItem key="settings">My Settings</DropdownItem>
+                    <DropdownItem key="team_settings">My Orders</DropdownItem>
+                    <DropdownItem key="system">My Wishlist</DropdownItem>
+                    <DropdownItem key="configurations">My Analytics</DropdownItem>
+                    <DropdownItem key="help_and_feedback">Returns & Cancellations</DropdownItem>
+                    <DropdownItem onClick={handleLogout} key="logout" color="danger">
+                        Log Out
+                    </DropdownItem>
+                </DropdownMenu>
+            </Dropdown>
+        )
+    }
+    const AuthIcon = () => {
+        return (
+            <a href='/register'>
+                <IoPersonOutline className='h-6 w-6 cursor-pointer hover:text-orange-700' />
+            </a>
+        )
+    }
     return (
         <div>
             <Navbar className='flex sm:justify-evenly'>
@@ -47,8 +94,8 @@ const NavBar = () => {
                 <NavbarContent className='flex sm:justify-end'>
                     <Input
                         classNames={{
-                            base: "max-w-full sm:max-w-[10rem] h-10 ",
-                            mainWrapper: "h-full ",
+                            base: "max-w-full sm:max-w-[11rem] h-10 ",
+                            mainWrapper: "h-full",
                             input: "text-small ",
                             inputWrapper: "h-full font-normal text-xs bg-default-400/20 dark:bg-default-500/20 hover:text-orange-700",
                         }}
@@ -57,35 +104,9 @@ const NavBar = () => {
                         startContent={<IoSearchOutline size={20} />}
                         type="search"
                     />
-                    <a href='/register'>
-                        <IoPersonOutline className='h-6 w-6 cursor-pointer hover:text-orange-700' />
-                    </a>
-                        <Dropdown placement="bottom-end">
-                            <DropdownTrigger>
-                                <Avatar
-                                    isBordered
-                                    as="button"
-                                    className="transition-transform"
-                                    color="secondary"
-                                    size="sm"
-                                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                                />
-                            </DropdownTrigger>
-                            <DropdownMenu aria-label="Profile Actions" variant="flat">
-                                <DropdownItem key="profile" className="h-14 gap-2">
-                                    <p className="font-semibold">Signed in as</p>
-                                    <p className="font-semibold">zoey@example.com</p>
-                                </DropdownItem>
-                                <DropdownItem key="settings">My Settings</DropdownItem>
-                                <DropdownItem key="team_settings">My Orders</DropdownItem>
-                                <DropdownItem key="system">My Wishlist</DropdownItem>
-                                <DropdownItem key="configurations">My Analytics</DropdownItem>
-                                <DropdownItem key="help_and_feedback">Returns & Cancellations</DropdownItem>
-                                <DropdownItem key="logout" color="danger">
-                                    Log Out
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </Dropdown>
+                    {isLoggedIn ? <LoggedInDrop /> : <AuthIcon />}
+
+
                     <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-600 hover:text-green-800' />
                 </NavbarContent>
             </Navbar>

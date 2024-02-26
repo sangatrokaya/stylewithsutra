@@ -15,14 +15,20 @@ export const userSlice = createSlice({
             return {
                 ...state,
                 userDetails,
-                token
+                token,
+                isLoggedIn: true
+            }
+        },
+        logoutUser: (state, action) => {
+            return {
+                ...initialState
             }
         },
     }
 });
 
 // this is for dispatch
-export const { addUserDetails } = userSlice.actions;
+export const { addUserDetails, logoutUser } = userSlice.actions;
 
 // this is for configureStore
 export default userSlice.reducer;

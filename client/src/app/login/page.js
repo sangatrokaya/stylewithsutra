@@ -31,9 +31,10 @@ const LoginForm = () => {
     const data = await res.json()
     if (res.status == 200) {
       dispatch(addUserDetails(data))
-      router.push('/login')
+      router.push('/')
+    }else{
+      toast(data.msg)
     }
-    toast(data.msg)
   }
 
   const formik = useFormik({
