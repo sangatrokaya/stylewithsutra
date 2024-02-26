@@ -107,7 +107,7 @@ const NavBar = () => {
                     {isLoggedIn ? <LoggedInDrop /> : <AuthIcon />}
 
 
-                    <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-600 hover:text-green-800' />
+                    <FaCartPlus className='h-7 w-7 cursor-pointer text-orange-700 hover:text-green-800' />
                 </NavbarContent>
             </Navbar>
         </div>
