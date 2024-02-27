@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {logoutUser} from '@/redux/reducerSlice/userSlice'
 import { useRouter } from 'next/navigation';
 
+
 const NavBar = () => {
     const dispatch = useDispatch()
     const router = useRouter()
@@ -58,7 +59,7 @@ const NavBar = () => {
     return (
         <div>
             <Navbar className='flex sm:justify-evenly'>
-                <NavbarBrand className="">
+                <NavbarBrand className='cursor-pointer'>
                     {/* <AcmeLogo /> */}
                     <Image className="m-1" src="/Ecomlogo.png" width='42' height='42'></Image>
                     <p className=" font-bold text-xl ">Style With <span className='text-orange-700'>Sutra</span></p>
@@ -97,7 +98,7 @@ const NavBar = () => {
                             base: "max-w-full sm:max-w-[11rem] h-10 ",
                             mainWrapper: "h-full",
                             input: "text-small ",
-                            inputWrapper: "h-full font-normal text-xs bg-default-400/20 dark:bg-default-500/20 hover:text-orange-700",
+                            inputWrapper: "h-full font-normal text-xs bg-default-400/20 bg-gray-200 hover:text-orange-700",
                         }}
                         placeholder="Type to search..."
                         size='sm'

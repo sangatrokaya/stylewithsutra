@@ -6,7 +6,7 @@ import Footer from '@/components/footer/page'
 import { FaShippingFast } from "react-icons/fa";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
-import { FcOnlineSupport } from "react-icons/fc";
+import { MdOutlineSupportAgent } from "react-icons/md";
 
 
 const page = () => {
@@ -158,7 +158,7 @@ const page = () => {
                         </div>
                         <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
                             <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                                <FcOnlineSupport class="text-orange-500 w-12 h-12 mb-3 inline-block" />
+                                <MdOutlineSupportAgent class="text-orange-500 w-12 h-12 mb-3 inline-block" />
                                 <h2 class="title-font font-medium text-xl text-gray-900 my-2">Online Support</h2>
                                 <p class="leading-relaxed text-xs">Always here to help & co-ordinate our customers, just a click away</p>
                             </div>
