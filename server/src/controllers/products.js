@@ -1,9 +1,12 @@
-const User = require('../models/products')
+const Product = require('../models/products')
 const addNewProducts = async(req, res) => {
-    await User.create(req.body)
-    res.json({
-        msg: "added successfully"
-    })
+    try {
+        if (req.file) {
+            await Product.create({...req.body})
+        }
+    } catch (error) {
+        throw console.log(error);
+    }
 }
 
-module.exports = { addNewProducts }
+module.exports = { addNewProducts };
